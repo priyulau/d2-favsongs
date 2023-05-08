@@ -3,63 +3,127 @@
 
 <head>
 <style>
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+}
+
+/*This styles the entire table*/
 table, th, td{
-    border: 1px solid black;
+    border: none;
     border-collapse: collapse;
     padding: 10px;
+    text-align: center;
+/*This centers the table no matter what size the screen is*/
+    margin-left: auto;
+    margin-right: auto;
 }
+/*This styles every even row*/
 tr:nth-child(even) {
-    background-color: lavenderblush
+    background-color: ghostwhite
+}
+
+.button{
+    background-color: silver;
+    border: thin solid gray;
+    padding: 3px 20px 3px 20px;
+    font-size: small;
+}
+
+.image{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.ranking{
+    font-size: xx-large;
+    font-weight: 100;
+    color: blueviolet;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: lavender;
+}
+
+a:hover{
+    background-color:lavender;
+    color:gray;
+}
+
+tr:hover{
+    background-color: lavender;
+}
+
+th{
+    background-color: lavender;
 }
 </style>
 </head>
 
 <body>
 
-<h1> Top 5 Taylor Swift Songs of All Time</h1>
+<h1 style="text-align: center;"> Top 5 Taylor Swift Songs of All Time</h1>
 
 <table>
     <tr>
+        <th>Ranking</th>
         <th>Song Title</th>
-        <th>Album Name</th>
+        <th>Album</th>
         <th>Release Date</th>
-        <th>Album Image</th>
+        <th>Listen</th>
     </tr>
 
     <tr>
-        <td>All Too Well</td>
-        <td>Red (2012)</td>
+        <td class="ranking">1</td>
+        <td style="font-weight: bolder">All Too Well</td>
+        <td>Red (2012)<br>
+            <img src="red.jpg" alt="Red Album (2012)" class="image"></img></td>
         <td>October 22, 2012</td>
-        <td><img src="red.jpg" alt="Red Album (2012)" width="50" height="50"></img></td>
+        <td><a href="https://www.youtube.com/watch?v=tollGa3S0o8&pp=ygUMYWxsIHRvbyB3ZWxs" 
+            target="_blank" class="button">Play Song</a></td>
     </tr>
  
     <tr>
-        <td>You Belong with Me</td>
-        <td>Fearless (2008)</td>
+        <td class="ranking">2</td>
+        <td style="font-weight: bolder">You Belong with Me</td>
+        <td>Fearless (2008)<br>
+            <img src="fearless.jpg" alt="Fearless Album (2008)" class="image"></img></td>
         <td>November 11, 2008</td>
-        <td><img src="fearless.jpg" alt="Fearless Album (2008)" width="50" height="50"></img></td>
+        <td><a href="https://www.youtube.com/watch?v=VuNIsY6JdUw&pp=ygUSeW91IGJlbG9uZyB3aXRoIG1l" 
+            target="_blank" class="button">Play Song</a></td>
     </tr>
 
     <tr>
-        <td>Shake It Off</td>
-        <td>1989 (2014)</td>
+        <td class="ranking">3</td>
+        <td style="font-weight: bolder">Shake It Off</td>
+        <td>1989 (2014)<br>
+            <img src="1989.jpg" alt="1989 Album (2014)" class="image"></img></td>
         <td>October 14, 2014</td>
-        <td><img src="1989.jpg" alt="1989 Album (2014)" width="50" height="50"></img></td>
+        <td><a href="https://www.youtube.com/watch?v=nfWlot6h_JM&pp=ygUMc2hha2UgaXQgb2Zm"
+            target="_blank" class="button">Play Song</td>
     </tr>
 
     <tr>
-        <td>Anti-Hero</td>
-        <td>Midnights (2022)</td>
+        <td class="ranking">4</td>
+        <td style="font-weight: bolder">Anti-Hero</td>
+        <td>Midnights (2022)<br>
+            <img src="midnights.jpg" alt="Midnights Album (2022)" class="image"></img></td>
         <td>October 21, 2022</td>
-        <td><img src="midnights.jpg" alt="Midnights Album (2022)" width="50" height="50"></img></td>
+        <td><a href="https://www.youtube.com/watch?v=b1kbLwvqugk&pp=ygUJYW50aS1oZXJv" 
+            target="_blank" class="button">Play Song</a></td>
     </tr>
 
     <tr>
-        <td>Mirrorball</td>
-        <td>Folklore (2020)</td>
+        <td class="ranking">5</td>
+        <td style="font-weight: bolder">Mirrorball</td>
+        <td>Folklore (2020)<br>
+            <img src="Folklore.jpg" alt="Folklore Album (2020)" class="image"></img></td>
         <td>July 24, 2020</td>
-        <td><img src="Folklore.jpg" alt="Folklore Album (2020)" width="50" height="50"></img></td>
-    </td>
+        <td><a href="https://www.youtube.com/watch?v=KaM1bCuG4xo&pp=ygUKbWlycm9yYmFsbA%3D%3D"
+            target="_blank" class="button">Play Song</a></td>
     </tr>
     
 </table>
